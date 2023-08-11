@@ -1,0 +1,336 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+.container {
+  max-width: 1500px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.header {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 54%, rgba(87, 184, 255, 1) 54%);
+  &-top__inner {
+    padding: 20px 0 215px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__contact-block {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '0';
+        width: 21px;
+        height: 18px;
+        border-radius: 9px;
+        background-color: #fff;
+        color: #141820;
+        text-align: center;
+        font-family: Orbitron;
+        font-size: 11px;
+        left: 33px;
+        bottom: 20px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+    img {
+      margin-right: 40px;
+    }
+    &-btn {
+      padding: 16px 31px;
+      border: 1px solid #fff;
+      color: #fff;
+      font-family: Orbitron;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+  &-content__inner {
+    display: flex;
+
+    padding-bottom: 150px;
+    position: relative;
+  }
+  &-content__links {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -195px;
+    top: 200px;
+    padding-left: 30px;
+    a + a {
+      margin-left: 59px;
+    }
+  }
+  &-content__link {
+    color: #80858f;
+    font-family: Orbitron;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 25px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #fac422;
+    }
+  }
+
+  &-content__img {
+    margin-left: 45px;
+    object-fit: contain;
+  }
+}
+.title {
+  color: #fff;
+  font-family: Orbitron;
+  width: 656px;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 86px;
+  text-transform: capitalize;
+  margin-bottom: 45px;
+  span {
+    padding-bottom: 5px;
+    background-image: url(../public/images/line.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+.btn {
+  color: #fff;
+  font-family: Orbitron;
+  font-size: 18px;
+  padding: 21px 34px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #57b8ff;
+  }
+}
+.subtitle {
+  color: #57b8ff;
+  font-family: Orbitron;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 24px;
+  &::before {
+    content: '';
+    background-image: url(../public/images/flame.svg);
+    width: 32px;
+    height: 32px;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+  }
+}
+.text {
+  color: #999;
+  font-family: Orbitron;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 53px;
+  width: 615px;
+}
+.menu {
+  &__list {
+    display: flex;
+    li + li {
+      margin-left: 60px;
+    }
+  }
+  &__list-item a {
+    color: #fff;
+    font-family: Orbitron;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #fac422;
+    }
+  }
+}
+.details {
+  background: #2a313c;
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    .details__img {
+      margin-top: -100px;
+    }
+  }
+  &__info-subtitle {
+    margin-bottom: 12px;
+  }
+  &__info-title {
+    font-size: 64px;
+    line-height: 74px;
+  }
+  &__info-text {
+    color: rgba(223, 223, 223, 0.8);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 54px;
+  }
+  &__info-characters {
+    display: flex;
+    div + div {
+      margin-left: 30px;
+    }
+  }
+  &__info-character {
+    cursor: pointer;
+    padding: 11px;
+    border-radius: 20px;
+    &.active {
+      border-radius: 20px;
+      background: #3b3d46;
+    }
+  }
+}
+.hide {
+  display: none;
+}
+.menuOpener {
+  display: none;
+}
+.overflow {
+  overflow: hidden;
+}
+
+.news {
+  padding: 130px 0;
+  background: #000;
+  &__inner {
+    position: relative;
+  }
+  &__subtitle {
+    position: relative;
+    &::before {
+      content: '';
+      background-image: url(../public/images/flame.svg);
+      width: 32px;
+      height: 32px;
+      bottom: -5px;
+      left: 0;
+      position: absolute;
+    }
+  }
+  &__title {
+    width: 541px;
+    line-height: 74px;
+    font-size: 64px;
+  }
+  &__btn {
+    position: absolute;
+    right: 0;
+    top: 125px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    row-gap:38px;
+    column-gap: 24px;
+    margin: 5px;
+  }
+  &__item {
+    width: 312px;
+    height: 321px;
+    box-sizing: border-box;
+    &--big {
+      width: 648px;
+      height: 510px;
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 3;
+      .news__item-title{
+        font-size: 36px;
+        line-height: 46px; 
+      }
+      .news__item-date{
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 28px;
+      }
+      .news__item-img{
+        margin-bottom: 54px;
+      }
+    }
+  }
+  &__item-date {
+    color: #57b8ff;
+   font-size: 16px;
+   line-height: 16px;
+   margin-bottom: 20px;
+  }
+  &__item-img {
+    margin-bottom: 30px;
+  }
+  &__item-title {
+    color: #fff;
+    font-size: 23px;
+    line-height: 34px;
+    text-transform: capitalize;
+   
+  }
+}
+
+.footer {
+  background: #222730;
+  padding: 100px 0 175px;
+  .logo-block {
+    margin-right: 150px;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__logo {
+    margin-bottom: 35px;
+    display: inline-block;
+  }
+  &__text {
+    color: #999;
+    font-size: 15px;
+    line-height: 25px;
+    width: 289px;
+  }
+  &__info {
+    display: flex;
+    li + li {
+      margin-right: 150px;
+    }
+  }
+  &__list-title {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 23px;
+  }
+  &__info-link {
+    color: #999;
+    font-size: 15px;
+    line-height: 37.5px;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #fac422;
+    }
+  }
+}
+
+@import './media.scss';
